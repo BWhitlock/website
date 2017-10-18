@@ -2,7 +2,7 @@ import { observer } from "mobx-react";
 import * as React from "react";
 
 type PageProps = {
-  includeFooter: boolean;
+  includeFooter?: boolean;
 };
 
 const Page: React.SFC<PageProps> = props => (
