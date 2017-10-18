@@ -1,13 +1,16 @@
 import "babel-polyfill";
 import * as React from "react";
 import { render } from "react-dom";
-import { Provider } from "react-redux";
-import routes from "./routes";
-import store from "./store";
+import { BrowserRouter, Route } from "react-router-dom";
+
+// const Home = WebpackCodeSplit(() => import("./components/pages/Home"));
 
 render(
-  <Provider store={store}>
-    {routes}
-  </Provider>,
+  <div>
+    <BrowserRouter>
+      <div>{/* <Route path="/" exact={true} component={Home} /> */}</div>
+    </BrowserRouter>
+    hi
+  </div>,
   document.getElementById("app")
 );
