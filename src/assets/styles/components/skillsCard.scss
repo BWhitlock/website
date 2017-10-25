@@ -1,0 +1,21 @@
+.skillsCard {
+    border: 1px solid white;
+    height: 400px;
+    width: 300px;
+    color: white;
+    box-shadow: 3px 3px 20px white;
+    margin: 50px 20px 0px 20px;
+    float: left;
+
+    &__top {
+        height: 50px;
+        text-align: center;
+        padding-top: 15px;
+        border-bottom: 1px solid white;
+        font-size: 30px;
+    }
+
+    &__bottom {
+        height: 350px;
+    }
+}

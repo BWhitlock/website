@@ -1,13 +1,14 @@
 import { observer } from "mobx-react";
 import * as React from "react";
+// import backgroundImage from "../../assets/images/background.jpg";
 
 type PageProps = {
   includeFooter?: boolean;
 };
 
 const Page: React.SFC<PageProps> = props => (
-  <div className="page__frame">
-    <div className="page__content">{props.children}</div>
+  <div className="scroll">
+    <div className="scroll2">{props.children}</div>
   </div>
 );
 

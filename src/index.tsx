@@ -4,6 +4,8 @@ import { render } from "react-dom";
 import { BrowserRouter, Route } from "react-router-dom";
 import WebpackCodeSplit from "./utils/WebpackCodeSplit";
 
+import "./assets/styles/main.scss";
+
 const Home = WebpackCodeSplit(() => import("./components/pages/Home"));
 
 render(

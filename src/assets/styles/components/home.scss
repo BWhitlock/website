@@ -1,0 +1,65 @@
+html {
+    overflow:   scroll;
+  }
+  ::-webkit-scrollbar {
+      width: 0px;
+      background: transparent; /* make scrollbar transparent */
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  .item {
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+    padding-top: 75px;
+    background: #ccc;
+    text-align: center;
+    color: #FFF;
+    font-size: 3em;
+  }
+
+.home {
+    height: 100vh;
+    background: rgb(93, 1, 214);
+    font-family: Verdana, Geneva, sans-serif;
+
+    &__header {
+        height: 200px;
+        position:absolute; /*it can be fixed too*/
+        left:0; right:0;
+        top:0; bottom:0;
+        margin:auto;
+
+        &__name {
+            text-align: center;
+            color: white;
+            font-size: 70px;
+        }
+
+        &__job {
+            opacity: 0;
+            text-align: center;
+            color: white;
+            padding-top: 10px;
+            font-size: 40px;
+            
+            // -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+            // -webkit-animation-delay: 1s; /* Safari 4.0 - 8.0 */
+            // -moz-animation: fadein 2s; /* Firefox < 16 */
+            //  -ms-animation: fadein 2s; /* Internet Explorer */
+            //   -o-animation: fadein 2s; /* Opera < 12.1 */
+            //      animation: fadein 4s;
+                 animation-delay: 1s;
+                 animation-fill-mode: forwards;
+                 
+        }
+    }
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
