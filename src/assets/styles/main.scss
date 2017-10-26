@@ -2,12 +2,13 @@
 // @import "variables";
 // @import "colors";
 
-//LAYOUT
-// @import "components/layout/page";
-// @import "components/layout/header";
+
 
 //PAGES
 @import "components/home";
+
+//LAYOUT
+@import "components/myInfo";
 
 //COMMON
 @import "components/skillsCard"

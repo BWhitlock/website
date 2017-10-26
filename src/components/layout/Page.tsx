@@ -6,10 +6,6 @@ type PageProps = {
   includeFooter?: boolean;
 };
 
-const Page: React.SFC<PageProps> = props => (
-  <div className="scroll">
-    <div className="scroll2">{props.children}</div>
-  </div>
-);
+const Page: React.SFC<PageProps> = props => <div>{props.children}</div>;
 
 export default observer(Page);
