@@ -25,6 +25,7 @@ html {
     height: 100vh;
     background: rgb(93, 1, 214);
     font-family: Verdana, Geneva, sans-serif;
+    color: white;
 
     &__header {
         height: 200px;
@@ -33,28 +34,28 @@ html {
         top:0; bottom:0;
         margin:auto;
 
+        &__scroll_text{
+            bottom: 0;
+            width: 100%;
+            position: absolute;
+            text-align: center;
+            font-size: 20px;
+            margin-bottom: 30px;
+            animation-delay: 2.5s;
+        }
+
         &__name {
             text-align: center;
-            color: white;
             font-size: 70px;
         }
 
         &__job {
             opacity: 0;
             text-align: center;
-            color: white;
             padding-top: 10px;
             font-size: 40px;
-            
-            // -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-            // -webkit-animation-delay: 1s; /* Safari 4.0 - 8.0 */
-            // -moz-animation: fadein 2s; /* Firefox < 16 */
-            //  -ms-animation: fadein 2s; /* Internet Explorer */
-            //   -o-animation: fadein 2s; /* Opera < 12.1 */
-            //      animation: fadein 4s;
-                 animation-delay: 1s;
-                 animation-fill-mode: forwards;
-                 
+            animation-delay: 1s;
+            animation-fill-mode: forwards;
         }
     }
 }

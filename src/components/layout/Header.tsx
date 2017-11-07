@@ -1,7 +1,7 @@
 import { observer } from "mobx-react";
 import * as React from "react";
 
-const Header: React.SFC = () => (
+const Header: React.SFC = () =>
   <div className="home">
     <div className="home__header">
       <div className="home__header__name animated fadeInLeft">
@@ -11,7 +11,9 @@ const Header: React.SFC = () => (
         Software Developer
       </div>
     </div>
-  </div>
-);
+    <div className="home__header__scroll_text animated fadeInUp">
+      --Scroll--
+    </div>
+  </div>;
 
 export default observer(Header);
